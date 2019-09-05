@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_marginTop="80sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magic 8 Ball"
+        android:layout_centerHorizontal="true"/>
+
+
+    <EditText
+        android:id="@+id/editText_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:layout_below="@id/textView_title"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:hint="Ask your question here..." />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:onClick="fortune"
+        android:text="Receive your fortune" />
+
+    <TextView
+        android:id="@+id/textView_answer"
+        android:layout_marginTop="80sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer will show up here"
+        android:layout_below="@id/button"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
